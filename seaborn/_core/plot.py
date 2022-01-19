@@ -1184,7 +1184,6 @@ class Plotter:
                         for col in df if col.startswith(prefix)
                     })
 
-            # TODO this was buggy before, needs test
             scales = self._scales.copy()
             scales.update(
                 {new: self._scales[old.name] for new, old in reassignments.items()}
